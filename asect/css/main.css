@@ -1,0 +1,499 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.nav_bar-used{
+    background-color: rgb(84 198 228);
+    padding-bottom: 16px;
+    padding-top: 8px;
+}
+.nav_bar-used_list{
+    list-style: none;
+    padding-left: 24px;
+}
+.nav_bar-used_item{
+    display: flex;
+    align-items: center;
+    padding: 8px 0 ;
+
+}
+.nav_bar-logo{
+    width: 100%;
+}
+.logo{
+    background-image: url('https://hoanghamobile.com/tin-tuc/wp-content/uploads/2020/08/Zingmp3-1.jpg');
+    width:100%;
+    padding-top: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav_bar-used-icon{
+    margin-right:32px;
+    color: rgb(37, 59, 71);
+    font-size:16px;
+}
+.nav_bar-used-name{
+
+}
+.nav_bar-used-link{
+    text-decoration: none;
+    color: rgb(28, 46, 95);
+    font-size: 14px;
+}
+.nav_bar-used-link:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.nav_bar-used-icon:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+/* ------content---- */
+.app_content{
+    background-color: rgb(109 204 242);
+}
+.nav_content{
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    background-color: rgb(81 197 228 / 68%);
+    box-shadow: 0 0 2px rgb(0 0 0 / 20%);
+
+}
+.nav_content-icon{
+    color: rgb(45, 114, 108);
+    display: flex;
+    align-items: center;
+}
+.directional{
+    display: flex;
+    list-style: none;
+}
+.directional-item{
+    padding:8px;
+    font-size:24px;
+    color:rgb(38, 74, 88);
+    cursor: pointer;
+
+}
+.leftBtn{
+    margin-right: 10px;
+}
+.headerSeach{
+    height:36px;    
+    width:100%;
+    flex:1;
+    outline:none;
+    margin: 0 40px 0 16px;
+    padding: 0 6px ;
+    
+    background-color: rgb(170 234 250);
+    border: none;
+}
+.seachBtn{
+    margin-left: 60px;
+    color: rgb(51, 46, 122);
+}
+.nav_content-icon-used_item{
+    font-size:  16px;
+    
+
+}
+.nav_content-icon-used_item-left{
+    margin-right: 16px;
+    padding:8px;
+
+
+}
+.nav_content-icon-used_item-right{
+    margin-left: 16px;
+    padding:8px;
+    border-radius: 2px;
+
+}
+.nav_content-used{
+    display: flex;
+    flex:1  ;
+    
+}
+.nav_content-used-item{
+    list-style: none;
+    padding: 8px 24px;
+    font-size: 14px;
+}
+.nav_content-used-item-list-icon{
+    list-style: none;
+    display: flex;
+    align-items:center;
+    margin-right: 40px;
+    flex:1;
+
+}
+.nav_content-used-item-icon{
+    font-size: 20px;
+    padding: 6px;
+    /* margin-right:  12px; */
+    color: #033175;
+}
+.like{
+    color: rgb(17, 108, 226);
+    margin-right: 30px;
+    cursor: pointer;
+
+}
+.setting{
+    margin-right: 30px;
+    color: #263752;
+    cursor: pointer;
+
+}
+.used{
+    color: rgb(75, 99, 204);
+    cursor: pointer;
+
+}
+
+
+/* -----bannner----- */
+.bannerList{
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #50b7ff;
+    padding-bottom: 60px;
+}
+.bannerList-item-1{
+    width:30%;
+}
+.bannerList-item-2{
+    width:30%;
+}.bannerList-item-3{
+    width:30%;
+}
+.bannerList-item-1 div{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcF-mLyqpRihtMKJJo3x0LQZlIVe-DZuAjPlu5DzbVGpUVOI0MJcr6xBOypeRivOb8BKc&usqp=CAU');    
+    width: 100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding-top: 60%;
+    flex:1;
+    overflow: hidden;
+    animation: showBanner ease 0.2s;
+
+}
+.bannerList-item-2 div{
+    background-image: url('https://image.freepik.com/free-psd/music-concept-banner-template_23-2148707322.jpg');
+    width: 100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding-top: 60%;
+
+    overflow: hidden;
+    flex:1;
+    animation: showBanner ease 0.2s;
+
+}
+.song{
+    cursor: pointer;
+}
+.bannerList-item-3 div {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxFntc4Sj2hhxewZplG5n2hrvP2K7tXzOVIMu0wnB0zNQGJ9X9weO9faT4vhUgcEgBiNU&usqp=CAU');
+    width: 100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding-top: 60%;
+
+    overflow: hidden;
+    flex:1;
+    animation: showBanner ease 0.2s;
+}
+@keyframes showBanner{
+    from{
+        opacity: 0.6;
+        transform: translateX(-20px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+/* ------header-content------ */
+.center-content{
+    padding: 30px;
+    padding-bottom: 16px;
+   
+}
+.center-content-header{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 16px; 
+    align-items:center;
+}
+.center-content-header-img{
+    width:40%;
+    display: flex;
+}
+.center-content-header-wrap{
+
+}
+.center-content-header-img div{
+    width: 100%;
+    padding-top: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin: auto;
+}
+.center-content-footer-img{
+    width:20%;
+    margin-top: -58px;
+
+}
+.center-content-footer-img div{
+    width: 100%;
+    /* height: 100%; */
+    padding-top:100%;
+    background-image: url('/asect/image/dancemonkey.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;   
+    border-radius: 20px;
+    border-radius: 50%;
+}
+.center-content-header-content{
+    list-style: none;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    height: 400px;
+    margin: 0 16px;
+    /* align-content: center; */
+}
+
+.center-content-header-type{
+    font-size:16px;
+    color:rgb(72, 123, 146);
+    width: 100%;
+    margin-bottom:  36px;
+}
+   
+.center-content-header-name{
+    font-size:44px;
+    line-height:58px;
+    height:44px;
+    overflow:hidden;
+    flex: 1;
+    font-weight: 800;
+    color: rgb(42, 30, 87);
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+
+}
+.center-content-header-single{
+    flex:1;
+    color:rgb(72, 123, 146);
+    width: 100%;
+}
+.center-content-banner{
+    background-image: url('https://img.freepik.com/free-vector/2020-music-banner-template_85212-219.jpg?size=626&ext=jpg');
+    width: 100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center; 
+    margin: 8px 16px;
+    margin-top:40px;
+}
+.center-content-control{
+    padding: 16px 0;
+    display:flex;
+    margin-top:24px;
+}
+.center-content-control-list{
+    margin: auto;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.center-content-control-item{
+    padding: 6px ;
+    font-size:40px;
+    margin: 0 16px ;
+    cursor: pointer;
+}
+.center-content-control-item-main{
+    padding: 6px ;
+    font-size:40px;
+    margin: 0 16px ;
+    cursor: pointer;
+}
+.random-btn.active{
+    color:#033175;
+
+}
+.return-btn.active{
+     color:#033175;
+}
+.pa-16{
+    padding: 6px ;
+
+}
+.center-content-control-item-main .pause-btn{
+    display:none;
+}
+.center-content-control-item-main.play .play-btn{
+    display: none;
+}
+.center-content-control-item-main.play .pause-btn{
+    display:block;
+}
+.center-content-control-item-main:active{
+    opacity: 0.8;
+}
+.center-content-control-item:active{
+    opacity: 0.8;
+}
+.return-btn{
+    font-size:20px;
+    color:rgb(56, 102, 133);
+}
+.back-btn{
+    font-size:20px;
+    color:rgb(56, 83, 133); 
+
+}   
+.play-btn{
+    color:rgb(3, 49, 117);
+}
+.pause-btn{
+    color:rgb(3, 49, 117);
+    display:none;
+
+
+}
+.next-btn{
+    font-size:20px;
+    color:rgb(56, 83, 133);
+
+}
+.random-btn{
+    font-size:20px;
+    color:rgb(56, 83, 133);
+
+}
+.control{
+    background-color: rgb(66 179 228);
+
+}
+/* ---------progesss-------------------------------- */
+.progess{
+    margin: 0 24px;
+
+}
+.progess-item{
+    /* width:100%;
+    background-color: rgb(151, 220, 247);
+    color:rgb(196, 33, 33);
+    -webkit-appearance: none; */
+    width: 100%;
+    -webkit-appearance: none;
+    height:12px;
+    background: rgb(151, 220, 247);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+.progess-value{
+    color: rgb(45, 89, 131);
+    font-size: 14px;
+    display: flex;
+    justify-content:space-between;
+    padding: 4px 16px;
+}
+.progess-value_current-time{
+
+}
+.progess-value_song-durion{
+
+}
+/* ----playList-------------------------------- */
+.playList_wrap{
+    background-color: rgb(60 206 234);
+    padding: 16px 0;
+    padding-bottom: 60px;
+
+}
+.playList{
+    margin: 0 32px;
+}
+.song{
+    display: flex;
+    padding:8px 0;
+    justify-content:space-between;
+    align-items:center;
+    margin: 8px 0;
+       background-color: rgb(172 220 252);
+}
+.song.active{
+    background-color: rgb(86 182 244);
+}
+.thumb{
+    width:50px;
+    height:50px;
+    background-size: contain;
+    margin-left: 6px;
+}
+.body{
+    margin-left: 24px;
+    flex:1;
+}
+.title{
+    font-size:16px;
+    padding:4px 0 ;
+}
+.author{
+    font-size: 14px;
+    padding:4px 0 ;
+    
+}
+.option{
+    padding:0 24px;
+}
+/* -----foooter---- */
+.footer{
+    padding-top:20px;
+    background-color: rgb(125, 222, 240);
+    padding-left: 183px;
+}
+.footer__heading{
+    font-size:14px;
+    font-weight: 400;
+    color: rgb(52, 74, 122);
+}
+.footer-list{
+    list-style: none;
+}
+.footer-item{
+
+}
+.footer-item__link{
+    text-decoration: none;
+    font-size: 12px;
+    color:#34517c;
+}
+.footer__text{
+    text-align: center;
+    padding: 8px 0;
+    font-size: 12px;
+    color: rgb(45, 75, 95);
+}
